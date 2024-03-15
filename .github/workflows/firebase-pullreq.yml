@@ -26,6 +26,7 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_TOKEN }}"
           channelId: live
-          projectId: your_project_id_here
+          projectId: 
+fir-hosting-test-e202b
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
