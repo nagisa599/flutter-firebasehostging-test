@@ -15,7 +15,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v1
         with:
-          flutter-version: "2.x"
+          flutter-version: "3.x"
 
       - name: Build Web
         run: flutter build web
@@ -25,7 +25,7 @@ jobs:
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_TOKEN }}"
-          channelId: live
-          projectId: your_project_id_here
+          # channelId: live
+          projectId: fir-hosting-test-e202b
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
