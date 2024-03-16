@@ -1,0 +1,30 @@
+name: Deploy to Firebase Hosting on Merge
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v1
+        with:
+          flutter-version: "3.x"
+
+      - name: Build Web
+        run: flutter build web
+
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_TOKEN }}"
+          projectId: fir-hosting-test-e202b # あなたのFirebaseプロジェクトIDに置き換えてください
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
