@@ -12,13 +12,12 @@ https://fir-hosting-test-e202b.web.app/
 <br />
 
 ## アプリケーションのイメージ
+<img width="838" alt="スクリーンショット 2024-03-26 22 51 13" src="https://github.com/nagisa599/flutter-firebasehostging-test/assets/134048673/ef4cd305-27fa-4ba1-ac64-b958295c1616">
 
 
 <br />
 
-## 機能一覧
 
-<br />
 
 
 <br />
