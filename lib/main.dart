@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       ),
       builder: DevicePreview.appBuilder,
       locale: DevicePreview.locale(context),
-      home: const MyHomePage(title: 'Flutter Demo Home Page2'),
+      home: const MyHomePage(title: 'pullrequestのサーバ'),
     );
   }
 }
